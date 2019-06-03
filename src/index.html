@@ -2,111 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Claudia-Ramirez</title>
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/overlay-menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,800,900&display=swap" rel="stylesheet">
+    <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header">
+        <div>
+            <a  class="home_logo" href=""><img class="logo" src="./assets/diamond.svg" alt="">Claudia Ramirez</a>
+        </div>
+        <div>
+            <button id="trigger-overlay" type="button" class="menu-btn"><img class="menu-icon" src="./assets/menu.svg" alt=""></button>   
+        </div>
+    </header>
+    <div class="overlay overlay-hugeinc">
+    <button type="button" class="overlay-close"></button>
         <nav>
-            <a href="">claudia/></a>
             <ul>
-                <li>Inicio/></li>
-                <li>Sobre mí/></li>
-                <li>Proyectos/></li>
-                <li>Habilidades/></li>
-                <li>Contacto/></li>
+                <li><a>Inicio</a></li>
+                <li><a>Proyectos</a></li>
+                <li><a>Habilidades</a></li>
+                <li><a>Sobre mí</a></li>
+                <li><a>Contacto</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
     <main>
-        <section class="inicio">
-            <h1>Claudia Ramirez</h1>
-            <p>Frontend Developer e Ingeníera en Tecnologias de la información y Comunicaciones</p>
-            <img src="" alt="photo">
-        </section>
-        <section class="about-me">
-            <h2>Acerca de mí</h2>
-            <p>Mi interés por la tecnología me a llevado a enfocarme en el mundo de la programación</p>
-            <p>Me gusta estar en constante aprendizaje y aprender nuevas tecnologias, me agrada trabajar equipo porque aprendo siempre algo nuevo o alguien mas aprende de mi, para llevar a un producto final con la calidad de se necesita y enfocarme en los detalles, priorizando tareas mas reelevntes</p>
-            <p>En mi tiempo libre me gusta leer articulos o noticias sobre tecnologia, hacer ejercicio, salir con mi hija</p>
-            <a href="">ver cv</a>
+        <section class="home">
+            <div class="home-left">
+                <div class="title-name">
+                    <p class="item-hello">Hola</p>
+                    <p class="item-name">Soy Claudia</p>
+                    <div class="item-desprition">
+                            <p class="subtitle-description">Frontend Developer & Ing. en TICS</p>
+                            <a class="btn-aboutme" href="#about-me">Sobre mí</a>
+                        </div>
+                </div>
+                <div class="desciption">
+                        <div class="social-network">
+                            <a class="item-icon"href="https://github.com/claudiaramirez" target="_blank"><img class="item-img github" src="./assets/github.svg" alt=""></a>
+                            <a class="item-icon"href="https://www.linkedin.com/in/claudiaramirez15/" target="_blank"><img class="item-img in" src="./assets/linkedin.svg" alt=""></a>
+                            <a class="item-icon"href="mailto:claudiaivonne_15@gmail.com" target="_blank"><img class="item-img email" src="./assets/email.svg" alt=""></a>
+                        </div>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="photo">
+                </div>
+                <div class="descrption-work">
+                    <p class="works-work">Soy Ingeníera en Tecnologias de la información y Comunicaciones especializada en  el area de en el area de desarrollo web.</p>
+                    <a class="btn-cv" href="https://drive.google.com/open?id=1Mw42FN7oq2U3wWi0ws0Gs3LWLjXmI_C7" target="_blank">Ver CV</a>
+                    
+                </div>
+            </div>
         </section>
         <section class="projects">
-            <h1>Proyectos</h1>
+            <h2 class="subtitle">Proyectos</h2>
             <div>   
                 <img src="" alt="chipher">
                 <p>Cifrado Cesar</p>
-                <a href="">Demo</a>
-                <a href="https://claudiaramirez.github.io/cdmx-2019-01-bc-core-am-cipher/src/">Visitar</a>
+                <a href="https://github.com/claudiaramirez/cdmx-2019-01-bc-core-am-cipher" target="_blank">Codigo</a>
+                <a href="https://claudiaramirez.github.io/cdmx-2019-01-bc-core-am-cipher/src/" target="_blank">Demo</a>
             </div>
             <div>   
                 <img src="" alt="banco-mundial">
                 <p>Banco Mundial</p>
-                <a href="">Demo</a>
-                <a href="https://claudiaramirez.github.io/cdmx-2019-01-bc-core-data-lovers/src/">Visitar</a>
+                <a href="https://github.com/claudiaramirez/cdmx-2019-01-bc-core-data-lovers" target="_blank">Codigo</a>
+                <a href="https://claudiaramirez.github.io/cdmx-2019-01-bc-core-data-lovers/src/" target="_blank">Demo</a>
             </div>
             <div>   
                 <img src="" alt="Red social">
                 <p>Spruthink</p>
-                <a href="">Demo</a>
-                <a href="https://claudiaramirez.github.io/CDMX007-social-network/src/#home">Visitar</a>
+                <a href="https://github.com/claudiaramirez/CDMX007-social-network" target="_blank">Codigo</a>
+                <a href="https://claudiaramirez.github.io/CDMX007-social-network/src/#home" target="_blank">Demo</a>
             </div>
             <div>   
                 <img src="" alt="Libreria con node">
                 <p>Libreria con node.js</p>
-                <a href="">Demo</a>
-                <a href="https://github.com/claudiaramirez/CDMX007-fe-md-links">Visitar</a>
+                <a href="">codigo</a>
+                <a href="https://github.com/claudiaramirez/CDMX007-fe-md-links" target="_blank">Demo</a>
             </div>
             <div>   
-                    <img src="" alt="Burger-Queen">
-                    <p>Burger-Queen</p>
-                    <a href="">Demo</a>
-                    <a href="https://burgerqueenmx.firebaseapp.com/">Visitar</a>
-                </div>
+                <img src="" alt="Burger-Queen">
+                <p>Burger-Queen</p>
+                <a href="https://github.com/claudiaramirez/CDMX007-fe-burger-queen" target="_blank">Codigo</a>
+                <a href="https://burgerqueenmx.firebaseapp.com/" target="_blank">Demo</a>
+            </div>
         </section>
-        <section>
-            <h2>Habilidades y conocimientos</h2>
-            <article>
+        <section class="soft-kills">
+            <h2 class="subtitle title-softkills">Habilidades y conocimientos</h2>
+            <article class="items-softkills">
                 <h3>Front-end</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript (ES6)</li>
-                    <li>React</li>
-                    <li>Firebase</li>
-                    <li>Git / GitHub</li>
-                    <li>Materialize</li>
-                    <li>Boostrap</li>
-                    <li>First-Mobile con box model y flexbox</li>
-                </ul>
+                    <p>HTML5</p>
+                    <p>CSS3</p>
+                    <p>JavaScript (ES6)</p>
+                    <p>React</p>
+                    <p>Firebase</p>
+                    <p>Git / GitHub</p>
+                    <p>Materialize</p>
+                    <p>Boostrap</p>
+                    <p>First-Mobile con box model y flexbox</p>
             </article>
-            <article>
+            <article class="items-softkills">
                 <h3>Soft-kills</h3>
-                <ul>
-                    <li>Metodología ágil</li>
-                    <li>Pensamiento analítio</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Adaptacion al cambio</li>
-                    <li>Creatividad</li>
-                    <li>Autoaprendizaje</li>
-                </ul>
+                    <p>Metodología ágil</p>
+                    <p>Pensamiento analítio</p>
+                    <p>Trabajo en equipo</p>
+                    <p>Adaptacion al cambio</p>
+                    <p>Creatividad</p>
+                    <p>Autoaprendizaje</p>
             </article>
+        </section> 
+        <section class="about-me">
+                <!-- <img src="./assets/11.jpg" alt=""> -->
+            <h2 class="subtitle">Acerca de mí</h2>
+            <p>Mi interés por la tecnología me a llevado a enfocarme en el mundo de la programación.</p>
+            <p>Me gusta estar en constante aprendizaje y aprender nuevas tecnologias, me agrada trabajar equipo porque aprendo siempre algo nuevo o alguien mas aprende de mi, para llevar a un producto final con la calidad de se necesita y enfocarme en los detalles, priorizando tareas mas reelevntes.</p>
+            <p>En mi tiempo libre me gusta leer articulos o noticias sobre tecnologia, hacer ejercicio, salir con mi hija.</p>
         </section>
         <section class="contact">
-            <p>Encuentrame en</p>
-            <a href="mailto:claudiaivonne_15@gmail.com"><img src="" alt="">E-mail</a>
-            <a href="https://github.com/claudiaramirez"><img src="" alt="">Github</a>
-            <a href="https://www.linkedin.com/in/claudiaramirez15/"><img src="" alt="">Linkedin</a>
-            <a href=""><img src="" alt="">Whatsapp</a>
+            <p class="subtitle">Encuentrame en</p>
+            <a href="mailto:claudiaivonne_15@gmail.com" target="_blank"><img src="" alt="">claudiaivonne_15@hotmail.com</a>
+            <a href="https://github.com/claudiaramirez" target="_blank"><img src="" alt="">github.com/claudiaramirez</a>
+            <a href="https://www.linkedin.com/in/claudiaramirez15/" target="_blank"><img src="" alt="">claudiaramirez15</a>
+            <a href=""><img src="" alt="" target="_blank">Whatsapp</a>
         </section>
     </main>
-    <footer>
-        <p>Claudia Ivonne Ramirez Rodriguez<span>Portafilio</span></p>
+    <footer class="footer">
+        <p><span> Portafilio - </span>Claudia Ivonne Ramirez Rodriguez</p>
     </footer>
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/overlaymenu.js"></script>
+	<script src="js/overlaymenu2.js"></script>
 </body>
 </html>
