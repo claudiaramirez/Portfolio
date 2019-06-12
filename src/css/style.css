@@ -52,6 +52,7 @@ body {
 }
 .header.active{
     /* background-color: rgba(19, 75, 154, 0.87); */
+    /* rgba(236, 68, 137, 0.68 */
     background-color: rgba(43, 52, 70, 0.8);
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -176,7 +177,8 @@ body {
     height: 70vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../assets/foto.jpg')
+    background-image: url('../assets/foto.jpg');
+    opacity: 0.8;
 }
 .descrption-work{
     display: flex;
