@@ -15,11 +15,13 @@ body {
     width: 35px;
     height: 35px;;
 }
+.logo-title{
+    margin-left: 10px;
+}
 .home_logo{
     display: flex;
     font-weight: 500;
     width: 210px;
-    justify-content: space-between;
     text-decoration: none;
     align-items: center;
     color: #fff;
@@ -308,19 +310,31 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    /*header*/
+    .header {
+        padding: 5px 10px 5px 10px;
+    }
     .container-items{
-        padding: 30px;
+        padding: 20px 10px;
     }
     .home {
         display: block;
     }
+    .home_logo {
+        justify-content: initial; 
+    }
     .home-left {
         position: relative;
+        width: 100%; 
         background-image: url('../assets/foto.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        width: 100%;
+        padding: 60px 10px 25px 10px;
     }
+    .backgorund{
+        background-color: #134b9a;
+    }
+   
     .item-name{
         font-size: 3em;
     }
@@ -340,4 +354,13 @@ body {
     .items-softkills{
         width: 100%;
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    /* .home-left {
+      
+        background-size: contain;
+        
+    } */
+
   }
