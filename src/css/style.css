@@ -9,7 +9,6 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-
 /*header*/
 .logo{
     width: 35px;
@@ -49,8 +48,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    z-index: 1;
-    
+    z-index: 2;
 }
 .header.active{
     /* background-color: rgba(19, 75, 154, 0.87); */
@@ -59,14 +57,8 @@ body {
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    
+    transition: all 1s ease-in-out;  
 }
-/* .header.scroll {
-    background-color: #A1572F;
-    color: #eef;
-  } */
-  
 .container-items{
     padding: 30px 60px;
 }
@@ -115,6 +107,7 @@ body {
     width: 100%;
     justify-content: flex-end;
     flex-direction: column;
+    z-index: 1;
 }
 .item-desprition{
     
@@ -218,11 +211,27 @@ body {
     flex-direction: column;
 }
 .subtitle{
+    position: relative;
     flex: 1 100%;
     text-align: center;
     color: #134b9a;
     text-transform: uppercase;
     margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+.subtitle:before {
+    content: "";
+    position: absolute;
+    background: #134b9a;
+    width: 4rem;
+    height: 2px;
+    top: 100%;
+    transform: translate(0%, 0%);
+    transition: all .3s ease;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 /* projects */
 .projects{
@@ -329,6 +338,16 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
         padding: 60px 10px 25px 10px;
+        background-position: center;
+    }
+    .home-left:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background-color: rgba(19, 75,154, 0.7)
     }
     .backgorund{
         background-color: #134b9a;
@@ -338,7 +357,9 @@ body {
         font-size: 3em;
     }
     .title-name{
+        z-index: 1;
         bottom: 0;
+        margin-top: 5rem;
     }
     .home-right {
         height: 200px;
