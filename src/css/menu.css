@@ -107,7 +107,7 @@ body {
 }
 .nav__list-item a{
     font-weight: 400;
-    font-size: 1em;
+    font-size: .8em;
     text-decoration: none;
     color: #fff;
 
@@ -191,20 +191,18 @@ body.nav-active .nav__list-item:nth-child(4) {
 
 @media only screen and (max-width: 768px) {
     .nav__content {
-        width: 30%;
+        width: 50%;
         cursor: pointer;
         margin: auto;
         left: 0;
         right: 0;
     }
-
     .nav__list-item {
         margin-right: 25px;
         display: flex;
         justify-content: center;
         line-height: 50px;
     }
-
     .nav__list {
         font-size: 1.2rem;
     }
