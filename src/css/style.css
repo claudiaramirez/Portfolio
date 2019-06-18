@@ -60,7 +60,7 @@ body {
     transition: all 1s ease-in-out;  
 }
 .container-items{
-    padding: 30px 60px;
+    /* padding: 30px 60px; */
 }
 /* home */
 .home{
@@ -214,6 +214,7 @@ body {
 .about-me{
     display: flex;
     flex-direction: column;
+    padding: 60px 60px;
 }
 .subtitle{
     position: relative;
@@ -239,7 +240,9 @@ body {
     margin: auto;
 }
 /* projects */
+
 .projects{
+    padding: 60px 60px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -297,6 +300,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+    padding: 60px 60px;
    
 }
 .title-softkills{
@@ -313,13 +317,40 @@ body {
 }
 /* contact */
 .contact{
-    text-align: center;
+    padding: 30px 60px;
+    background-color: #134b9a
+}
+.find-me{
+    text-align: left;
+    font-size: 1.5rem;
+    color: #4188f5;
+    padding: 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.item-social{
+    display: flex;
+    text-decoration: none;
+    color:#fff;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    padding: 5px;
    
+}
+.social-img{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
 }
 /* footer */
 .footer{
-    text-align: center;
-    
+    display: flex;
+    align-items: center;
+    background-color: #2a3344;
+    justify-content: center;
+    color: #a9aaab;
 }
 .btn-aboutme.show{
     display: block;
@@ -334,7 +365,7 @@ body {
         padding: 5px 10px 5px 10px;
     }
     .container-items{
-        padding: 20px 10px;
+        /* padding: 20px 10px; */
     }
     .home {
         display: block;
@@ -375,8 +406,7 @@ body {
        
     }
     .home-right {
-        height: 200px;
-        width: 100%;
+        display: none;
         
     }
     .photo{
@@ -391,15 +421,31 @@ body {
     .btn-aboutme.hide{
         display: block;
     }
+    /* projects */
+    .projects{
+
+    }
+    
     /*soft-kills*/
+    .soft-kills{
+        padding: 60px 10px 60px;
+        }
     .items-softkills{
         width: 100%;
+    }
+    /*about-me*/
+    .about-me{
+        padding: 60px 10px;
+    }
+    /* contact */
+    .contact {
+        padding: 30px 10px;
     }
   }
 
   @media only screen and (max-width: 480px) {
-    .title-name{
+    /* .title-name{
         z-index: 1;
         bottom: 0;
-    }
+    } */
   }
