@@ -250,7 +250,7 @@ body {
 }
 .item_project{
     display: flex;
-    width: 350px;
+    width: 400px;
     min-height: 400px;
     margin-bottom: 40px;
     border-radius: 5px;
