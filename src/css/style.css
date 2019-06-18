@@ -348,7 +348,7 @@ body {
         background-image: url('../assets/foto.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 60px 10px 25px 10px;
+        padding: 60px 10px 60px 10px;
         background-position: center;
     }
     .home-left:after{
