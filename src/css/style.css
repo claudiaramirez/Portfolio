@@ -321,6 +321,12 @@ body {
     text-align: center;
     
 }
+.btn-aboutme.show{
+    display: block;
+}
+.btn-aboutme.hide{
+    display: none;
+}
 
 @media only screen and (max-width: 768px) {
     /*header*/
@@ -379,8 +385,11 @@ body {
     .descrption-work{
         display: none;
     }
-    .hide{
+    .btn-aboutme.show{
         display: none;
+    }
+    .btn-aboutme.hide{
+        display: block;
     }
     /*soft-kills*/
     .items-softkills{
