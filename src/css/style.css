@@ -90,6 +90,7 @@ body {
 .item-hello{
     font-size: 1.3em;
     color: #4188f5;
+    /* color: #fff; */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -307,7 +308,7 @@ body {
     flex:1 100%;
 }
 .items-softkills{
-    width: 50%;
+    width: 33%;
 }
 .subtitle-softkills{
     
@@ -358,6 +359,11 @@ body {
 .btn-aboutme.hide{
     display: none;
 }
+.footer-title{
+    line-height: 1em;
+    text-align: center;
+    display: block;
+}
 
 @media only screen and (max-width: 768px) {
     /*header*/
@@ -391,9 +397,14 @@ body {
         top: 0;
         background-color: rgba(19, 75,154, 0.7)
     }
-
+    .item-hello{
+        
+        /* color: #4188f5; */
+        color: #fff;
+       
+    }
     .backgorund{
-        background-color: #134b9a;
+        /* background-color: #134b9a; */
     }
    
     .item-name{
